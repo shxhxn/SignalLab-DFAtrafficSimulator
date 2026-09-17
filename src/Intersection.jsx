@@ -34,7 +34,7 @@ export default function Intersection({ state, phase, speed, generation }) {
   const fault = state === 'D';
   const stopped = phase === 'failsafe';
   const active = stopped ? 'Y' : fault ? 'R' : state;
-  return <svg className="intersection" viewBox="0 0 1000 510" role="img" aria-label={`Animated eastbound traffic intersection. ${stopped ? 'Manual stop, amber flashing' : fault ? 'Controller fault, red flashing' : `${state} signal active`}`}>
+  return <svg className="intersection" viewBox="0 0 1000 510" preserveAspectRatio="xMidYMid slice" role="img" aria-label={`Animated eastbound traffic intersection. ${stopped ? 'Manual stop, amber flashing' : fault ? 'Controller fault, red flashing' : `${state} signal active`}`}>
     <defs>
       <linearGradient id="asphalt" x2="0" y2="1"><stop stopColor="#647074" /><stop offset="1" stopColor="#58666a" /></linearGradient>
       <linearGradient id="signal-metal" x2="1" y2="0"><stop stopColor="#293c42" /><stop offset=".45" stopColor="#526369" /><stop offset="1" stopColor="#26363c" /></linearGradient>
