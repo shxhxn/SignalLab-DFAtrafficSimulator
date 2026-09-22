@@ -1,4 +1,8 @@
-﻿# SignalLab — DFA Traffic Simulator
+# SignalLab — DFA Traffic Simulator
+
+[![CI](https://github.com/shxhxn/SignalLab-DFAtrafficSimulator/actions/workflows/ci.yml/badge.svg)](https://github.com/shxhxn/SignalLab-DFAtrafficSimulator/actions/workflows/ci.yml)
+![React](https://img.shields.io/badge/React-19-149eca)
+![Vite](https://img.shields.io/badge/Vite-8-646cff)
 
 An interactive **Formal Languages and Automata Theory (FLAT)** project that validates traffic-light changes using a deterministic finite automaton. A light interface puts an animated intersection beside its live state diagram and transition table.
 
@@ -97,4 +101,3 @@ The PDF generator currently references standard Windows Arial font paths; adjust
 
 This is a single-approach teaching simulation. Dwell times (red 4.2s, green 4.2s, yellow 1.9s), vehicle motion, replay and manual stop are outside the DFA. It does not implement physical intersection safety, pedestrian phases or real-world controller timing. The signal is a Moore-style output derived from state; acceptance is a separate DFA property.
 
-This workspace is a new local Git repository. No remote is configured by default.
